@@ -1,0 +1,154 @@
+* {
+        font-family: Verdana;
+        
+
+}
+.column-one {
+        background-image: url("tareq-aja.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+}
+
+header {
+        display: flex;
+        justify-content: space-between;
+}
+
+nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 35px;
+
+}
+
+nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+
+
+}
+nav ul li a {
+        text-decoration: none;
+        color: #fff;
+
+}
+
+ul li a:hover {
+        color: #7beaee;
+
+}
+
+.nav-icons li {
+        display: inline-block;
+}
+
+.top-section-1{
+        margin: 20px 40px;
+}
+
+.profile-section {
+        position: relative;
+        height: 500px;
+        width: 450px;
+        gap: 0px;
+        border-radius: 10px 10px 50% 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        background: grey;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.profile-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+
+}
+
+.profile-image {
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
+}
+
+.profile-description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 70%;
+                padding: 10px;
+                opacity: 0;
+                transform: translateY(-110px);
+                transition: all 0.7s ease-in-out;
+                
+                
+}
+
+.profile-icons {
+        display:flex;
+        gap: 10px;
+} 
+
+.profile-icons i {
+        font-size: 30px;
+        color: rgb(20, 20, 20);
+        transition: all 0.5s ease-in-out;
+
+}
+
+.profile-section:hover {
+        transform: scale(1.1);
+        border-radius: 10px 10px 10px 10px;
+        background: rgba(255, 255, 255, 0.61);
+        color: black;
+}
+
+.profile-section:hover .profile-image {
+                transform: translate(-150px, -50px);
+                height: 120px;
+                width: 120px;
+                background: rgba(51, 49, 51, 0.755);
+
+}
+
+.profile-section:hover .profile-header {
+        transform: translate(0px, -140px);
+}
+.profile-section:hover .profile-description {
+        opacity: 1;
+}
+    
+.profile-icons i:hover {
+        color: rgb(173, 47, 47);
+        transform: scale (1.2);
+        animation: shake 0.5s ease-in-out forwards;
+}
+
+@keyframes shake{
+        0%{
+                transform: translateX(0px);
+        }
+        25% {
+                transform: translateX(3px);
+                }
+        50% {
+                transform: translateX(0px);
+        }       
+        75% {
+                transform: translateX(-3px);
+        }
+        100% {
+                transform: translateX(0px);
+        }
+}
